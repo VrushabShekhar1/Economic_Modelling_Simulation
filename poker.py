@@ -83,7 +83,7 @@ while True:
             break
 
 prob = flush/ i * 100
-print( f"The probability of a flush is {prob}%")
+print(f"The probability of a flush is {prob}%")
 
 
 
