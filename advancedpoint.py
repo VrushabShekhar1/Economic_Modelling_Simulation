@@ -1,7 +1,7 @@
 from colorpoint import ColorPoint
 #the idea is to makex and y protected from being written after initialization
 class AdvancedColorPoint(ColorPoint):
-    def __init__(self, x, y, color):
+    def __init__(self, x, y, color): #this is a magic method,
         self._x = x
         self._y = y
         self._color = color
