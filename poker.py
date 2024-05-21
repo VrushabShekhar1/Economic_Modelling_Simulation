@@ -166,7 +166,8 @@ while True:
         pairs += 1
         if pairs == 10:
             break
-
+def dealer():
+    print("Hello! I am going to be the dealer for the poker game. Let's Play!") 
 
 
 
@@ -189,7 +190,16 @@ while True:
 # prob = matches/ i * 100
 # print(f"The probability of a flush is {matches}%")
 
-
+#Pair probability calculation
+matches = 0
+attempts = 0
+while matches < 10:
+    attempts += 1
+    deck = Deck()
+    deck.shuffle()
+    hand = PokerHand(deck)
+    if hand.is_pair:
+        matches += 1
 
 # i = 0
 # flush = 0
